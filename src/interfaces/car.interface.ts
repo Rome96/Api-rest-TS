@@ -1,4 +1,5 @@
 export interface Car {
+  name: string;
   year: number;
   color: string;
   price: number;

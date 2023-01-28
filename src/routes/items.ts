@@ -7,7 +7,7 @@ const router = Router();
 router.get('/', getItems)
 router.get('/:id', getItem)
 router.post('/', postItem)
-router.put('/', updateItem)
+router.put('/:id', updateItem)
 router.delete('/', deleteItem)
 
  
