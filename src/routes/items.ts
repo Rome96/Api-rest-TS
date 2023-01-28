@@ -1,10 +1,11 @@
-import {Request, Response, Router } from 'express';
+import { Router } from 'express';
+import { LogMiddleware } from '../middleware/log';
 import { deleteItem, getItem, getItems, postItem, updateItem } from '../controllers/items';
 
 const router = Router();
 
 // http://localhost:3003/item
-router.get('/', getItems)
+router.get('/', LogMiddleware, getItems)
 router.get('/:id', getItem)
 router.post('/', postItem)
 router.put('/:id', updateItem)
