@@ -23,7 +23,7 @@ const updateCar = async (id: string, data: Car) => {
 };
 
 const deleteCar = async (id: string) => {
-  return await ItemModel.find({ _id: id });
+  return await ItemModel.remove({ _id: id });
 };
 
 export {
