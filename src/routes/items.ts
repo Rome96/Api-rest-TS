@@ -4,7 +4,7 @@ import { deleteItem, getItem, getItems, postItem, updateItem } from '../controll
 
 const router = Router();
 
-// http://localhost:3003/item
+// http://localhost:3002/item
 router.get('/', LogMiddleware, getItems)
 router.get('/:id', getItem)
 router.post('/', postItem)

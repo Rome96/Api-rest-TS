@@ -5,23 +5,23 @@ const ItemSchema = new Schema<Car>(
   {
     year: {
       type: Number,
-      remove: true,
+      required: true,
     },
     color: {
       type: String,
-      remove: true,
+      required: true,
     },
     price: {
       type: Number,
-      remove: true,
+      required: true,
     },
     description: {
       type: String,
-      remove: true,
+      required: true,
     },
     motor: {
       type: String,
-      remove: true,
+      required: true,
       enum: ['gasoline', 'electric']
     },
   },
